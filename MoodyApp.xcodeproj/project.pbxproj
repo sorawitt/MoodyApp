@@ -11,7 +11,37 @@
 		2218205F2B0EFFF9000996AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218205E2B0EFFF9000996AD /* ContentView.swift */; };
 		221820612B0EFFFB000996AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221820602B0EFFFB000996AD /* Assets.xcassets */; };
 		221820642B0EFFFB000996AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221820632B0EFFFB000996AD /* Preview Assets.xcassets */; };
+		222F564A2B0F120C009C6D12 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222F56492B0F120C009C6D12 /* WidgetKit.framework */; };
+		222F564C2B0F120C009C6D12 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222F564B2B0F120C009C6D12 /* SwiftUI.framework */; };
+		222F564F2B0F120C009C6D12 /* MoodyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F564E2B0F120C009C6D12 /* MoodyWidgetBundle.swift */; };
+		222F56512B0F120C009C6D12 /* MoodyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56502B0F120C009C6D12 /* MoodyWidget.swift */; };
+		222F56532B0F120D009C6D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222F56522B0F120D009C6D12 /* Assets.xcassets */; };
+		222F56572B0F120D009C6D12 /* MoodyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 222F56472B0F120C009C6D12 /* MoodyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		222F56552B0F120D009C6D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 221820512B0EFFF9000996AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 222F56462B0F120C009C6D12;
+			remoteInfo = MoodyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		222F56582B0F120D009C6D12 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				222F56572B0F120D009C6D12 /* MoodyWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		221820592B0EFFF9000996AD /* MoodyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +50,14 @@
 		221820602B0EFFFB000996AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		221820632B0EFFFB000996AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2218206A2B0F0F7C000996AD /* MoodyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodyApp.entitlements; sourceTree = "<group>"; };
+		222F56472B0F120C009C6D12 /* MoodyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MoodyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		222F56492B0F120C009C6D12 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		222F564B2B0F120C009C6D12 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		222F564E2B0F120C009C6D12 /* MoodyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyWidgetBundle.swift; sourceTree = "<group>"; };
+		222F56502B0F120C009C6D12 /* MoodyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyWidget.swift; sourceTree = "<group>"; };
+		222F56522B0F120D009C6D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		222F56542B0F120D009C6D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222F565C2B0F1218009C6D12 /* MoodyWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodyWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,13 +68,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		222F56442B0F120C009C6D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222F564C2B0F120C009C6D12 /* SwiftUI.framework in Frameworks */,
+				222F564A2B0F120C009C6D12 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		221820502B0EFFF9000996AD = {
 			isa = PBXGroup;
 			children = (
+				222F565C2B0F1218009C6D12 /* MoodyWidgetExtension.entitlements */,
 				2218205B2B0EFFF9000996AD /* MoodyApp */,
+				222F564D2B0F120C009C6D12 /* MoodyWidget */,
+				222F56482B0F120C009C6D12 /* Frameworks */,
 				2218205A2B0EFFF9000996AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				221820592B0EFFF9000996AD /* MoodyApp.app */,
+				222F56472B0F120C009C6D12 /* MoodyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +120,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		222F56482B0F120C009C6D12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				222F56492B0F120C009C6D12 /* WidgetKit.framework */,
+				222F564B2B0F120C009C6D12 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		222F564D2B0F120C009C6D12 /* MoodyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				222F564E2B0F120C009C6D12 /* MoodyWidgetBundle.swift */,
+				222F56502B0F120C009C6D12 /* MoodyWidget.swift */,
+				222F56522B0F120D009C6D12 /* Assets.xcassets */,
+				222F56542B0F120D009C6D12 /* Info.plist */,
+			);
+			path = MoodyWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +150,34 @@
 				221820552B0EFFF9000996AD /* Sources */,
 				221820562B0EFFF9000996AD /* Frameworks */,
 				221820572B0EFFF9000996AD /* Resources */,
+				222F56582B0F120D009C6D12 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				222F56562B0F120D009C6D12 /* PBXTargetDependency */,
 			);
 			name = MoodyApp;
 			productName = MoodyApp;
 			productReference = 221820592B0EFFF9000996AD /* MoodyApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		222F56462B0F120C009C6D12 /* MoodyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222F565B2B0F120D009C6D12 /* Build configuration list for PBXNativeTarget "MoodyWidgetExtension" */;
+			buildPhases = (
+				222F56432B0F120C009C6D12 /* Sources */,
+				222F56442B0F120C009C6D12 /* Frameworks */,
+				222F56452B0F120C009C6D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodyWidgetExtension;
+			productName = MoodyWidgetExtension;
+			productReference = 222F56472B0F120C009C6D12 /* MoodyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +190,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					221820582B0EFFF9000996AD = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					222F56462B0F120C009C6D12 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -118,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				221820582B0EFFF9000996AD /* MoodyApp */,
+				222F56462B0F120C009C6D12 /* MoodyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +223,14 @@
 			files = (
 				221820642B0EFFFB000996AD /* Preview Assets.xcassets in Resources */,
 				221820612B0EFFFB000996AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222F56452B0F120C009C6D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222F56532B0F120D009C6D12 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +246,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		222F56432B0F120C009C6D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222F56512B0F120C009C6D12 /* MoodyWidget.swift in Sources */,
+				222F564F2B0F120C009C6D12 /* MoodyWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		222F56562B0F120D009C6D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 222F56462B0F120C009C6D12 /* MoodyWidgetExtension */;
+			targetProxy = 222F56552B0F120D009C6D12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		221820652B0EFFFB000996AD /* Debug */ = {
@@ -269,6 +388,7 @@
 		221820682B0EFFFB000996AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MoodyApp/MoodyApp.entitlements;
@@ -299,6 +419,7 @@
 		221820692B0EFFFB000996AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MoodyApp/MoodyApp.entitlements;
@@ -326,6 +447,62 @@
 			};
 			name = Release;
 		};
+		222F56592B0F120D009C6D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MoodyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27FY64RUCC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sorawitt.MoodyApp.MoodyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		222F565A2B0F120D009C6D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MoodyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27FY64RUCC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sorawitt.MoodyApp.MoodyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +520,15 @@
 			buildConfigurations = (
 				221820682B0EFFFB000996AD /* Debug */,
 				221820692B0EFFFB000996AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		222F565B2B0F120D009C6D12 /* Build configuration list for PBXNativeTarget "MoodyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222F56592B0F120D009C6D12 /* Debug */,
+				222F565A2B0F120D009C6D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
