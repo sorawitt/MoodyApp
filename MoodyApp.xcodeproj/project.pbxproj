@@ -17,10 +17,18 @@
 		222F56512B0F120C009C6D12 /* TodayMoodWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56502B0F120C009C6D12 /* TodayMoodWidget.swift */; };
 		222F56532B0F120D009C6D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222F56522B0F120D009C6D12 /* Assets.xcassets */; };
 		222F56572B0F120D009C6D12 /* MoodyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 222F56472B0F120C009C6D12 /* MoodyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		222F56602B0F1394009C6D12 /* StaticValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F565F2B0F1394009C6D12 /* StaticValue.swift */; };
 		222F56622B0F13B1009C6D12 /* MoodImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56612B0F13B1009C6D12 /* MoodImageModel.swift */; };
 		222F56642B0F13F0009C6D12 /* MoodImageGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56632B0F13F0009C6D12 /* MoodImageGridViewModel.swift */; };
-		222F56672B0F1ACF009C6D12 /* FixedMoodWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56662B0F1ACF009C6D12 /* FixedMoodWidget.swift */; };
+		222F56A52B0F1EA5009C6D12 /* FixedMoodWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 222F56A42B0F1EA5009C6D12 /* FixedMoodWidget.intentdefinition */; };
+		222F56AC2B0F2015009C6D12 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222F56AB2B0F2015009C6D12 /* Intents.framework */; };
+		222F56AF2B0F2015009C6D12 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56AE2B0F2015009C6D12 /* IntentHandler.swift */; };
+		222F56B32B0F2015009C6D12 /* FixedMoodyWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 222F56AA2B0F2015009C6D12 /* FixedMoodyWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		222F56B72B0F20F5009C6D12 /* FixedMoodWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 222F56A42B0F1EA5009C6D12 /* FixedMoodWidget.intentdefinition */; };
+		222F56B82B0F20F6009C6D12 /* FixedMoodWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 222F56A42B0F1EA5009C6D12 /* FixedMoodWidget.intentdefinition */; };
+		222F56BA2B0F22C2009C6D12 /* FixedMoodWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56662B0F1ACF009C6D12 /* FixedMoodWidget.swift */; };
+		222F56BB2B0F22CA009C6D12 /* StaticValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F565F2B0F1394009C6D12 /* StaticValue.swift */; };
+		222F56BC2B0F22D2009C6D12 /* MoodImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56612B0F13B1009C6D12 /* MoodImageModel.swift */; };
+		222F56BD2B0F22D2009C6D12 /* MoodImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56612B0F13B1009C6D12 /* MoodImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +39,13 @@
 			remoteGlobalIDString = 222F56462B0F120C009C6D12;
 			remoteInfo = MoodyWidgetExtension;
 		};
+		222F56B12B0F2015009C6D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 221820512B0EFFF9000996AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 222F56A92B0F2015009C6D12;
+			remoteInfo = FixedMoodyWidget;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				222F56B32B0F2015009C6D12 /* FixedMoodyWidget.appex in Embed Foundation Extensions */,
 				222F56572B0F120D009C6D12 /* MoodyWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -66,6 +82,12 @@
 		222F56612B0F13B1009C6D12 /* MoodImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodImageModel.swift; sourceTree = "<group>"; };
 		222F56632B0F13F0009C6D12 /* MoodImageGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodImageGridViewModel.swift; sourceTree = "<group>"; };
 		222F56662B0F1ACF009C6D12 /* FixedMoodWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedMoodWidget.swift; sourceTree = "<group>"; };
+		222F56A42B0F1EA5009C6D12 /* FixedMoodWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FixedMoodWidget.intentdefinition; sourceTree = "<group>"; };
+		222F56AA2B0F2015009C6D12 /* FixedMoodyWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FixedMoodyWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		222F56AB2B0F2015009C6D12 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		222F56AE2B0F2015009C6D12 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		222F56B02B0F2015009C6D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222F56B92B0F21F5009C6D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		222F56A72B0F2015009C6D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222F56AC2B0F2015009C6D12 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +124,7 @@
 				222F565C2B0F1218009C6D12 /* MoodyWidgetExtension.entitlements */,
 				2218205B2B0EFFF9000996AD /* MoodyApp */,
 				222F564D2B0F120C009C6D12 /* MoodyWidget */,
+				222F56AD2B0F2015009C6D12 /* FixedMoodyWidget */,
 				222F56482B0F120C009C6D12 /* Frameworks */,
 				2218205A2B0EFFF9000996AD /* Products */,
 			);
@@ -104,6 +135,7 @@
 			children = (
 				221820592B0EFFF9000996AD /* MoodyApp.app */,
 				222F56472B0F120C009C6D12 /* MoodyWidgetExtension.appex */,
+				222F56AA2B0F2015009C6D12 /* FixedMoodyWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +143,7 @@
 		2218205B2B0EFFF9000996AD /* MoodyApp */ = {
 			isa = PBXGroup;
 			children = (
+				222F56B92B0F21F5009C6D12 /* Info.plist */,
 				2218206A2B0F0F7C000996AD /* MoodyApp.entitlements */,
 				2218205C2B0EFFF9000996AD /* MoodyAppApp.swift */,
 				2218205E2B0EFFF9000996AD /* ContentView.swift */,
@@ -135,6 +168,7 @@
 			children = (
 				222F56492B0F120C009C6D12 /* WidgetKit.framework */,
 				222F564B2B0F120C009C6D12 /* SwiftUI.framework */,
+				222F56AB2B0F2015009C6D12 /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,9 +205,19 @@
 		222F56652B0F1A94009C6D12 /* FixedMood */ = {
 			isa = PBXGroup;
 			children = (
+				222F56A42B0F1EA5009C6D12 /* FixedMoodWidget.intentdefinition */,
 				222F56662B0F1ACF009C6D12 /* FixedMoodWidget.swift */,
 			);
 			path = FixedMood;
+			sourceTree = "<group>";
+		};
+		222F56AD2B0F2015009C6D12 /* FixedMoodyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				222F56AE2B0F2015009C6D12 /* IntentHandler.swift */,
+				222F56B02B0F2015009C6D12 /* Info.plist */,
+			);
+			path = FixedMoodyWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +236,7 @@
 			);
 			dependencies = (
 				222F56562B0F120D009C6D12 /* PBXTargetDependency */,
+				222F56B22B0F2015009C6D12 /* PBXTargetDependency */,
 			);
 			name = MoodyApp;
 			productName = MoodyApp;
@@ -215,6 +260,23 @@
 			productReference = 222F56472B0F120C009C6D12 /* MoodyWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		222F56A92B0F2015009C6D12 /* FixedMoodyWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222F56B42B0F2015009C6D12 /* Build configuration list for PBXNativeTarget "FixedMoodyWidget" */;
+			buildPhases = (
+				222F56A62B0F2015009C6D12 /* Sources */,
+				222F56A72B0F2015009C6D12 /* Frameworks */,
+				222F56A82B0F2015009C6D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FixedMoodyWidget;
+			productName = FixedMoodyWidget;
+			productReference = 222F56AA2B0F2015009C6D12 /* FixedMoodyWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -229,6 +291,9 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					222F56462B0F120C009C6D12 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					222F56A92B0F2015009C6D12 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -248,6 +313,7 @@
 			targets = (
 				221820582B0EFFF9000996AD /* MoodyApp */,
 				222F56462B0F120C009C6D12 /* MoodyWidgetExtension */,
+				222F56A92B0F2015009C6D12 /* FixedMoodyWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +336,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		222F56A82B0F2015009C6D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -277,8 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222F56602B0F1394009C6D12 /* StaticValue.swift in Sources */,
-				222F56672B0F1ACF009C6D12 /* FixedMoodWidget.swift in Sources */,
+				222F56B82B0F20F6009C6D12 /* FixedMoodWidget.intentdefinition in Sources */,
 				222F56622B0F13B1009C6D12 /* MoodImageModel.swift in Sources */,
 				222F56642B0F13F0009C6D12 /* MoodImageGridViewModel.swift in Sources */,
 				2218205F2B0EFFF9000996AD /* ContentView.swift in Sources */,
@@ -290,8 +362,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222F56A52B0F1EA5009C6D12 /* FixedMoodWidget.intentdefinition in Sources */,
 				222F56512B0F120C009C6D12 /* TodayMoodWidget.swift in Sources */,
+				222F56BB2B0F22CA009C6D12 /* StaticValue.swift in Sources */,
 				222F564F2B0F120C009C6D12 /* MoodyWidgetBundle.swift in Sources */,
+				222F56BD2B0F22D2009C6D12 /* MoodImageModel.swift in Sources */,
+				222F56BA2B0F22C2009C6D12 /* FixedMoodWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222F56A62B0F2015009C6D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222F56B72B0F20F5009C6D12 /* FixedMoodWidget.intentdefinition in Sources */,
+				222F56BC2B0F22D2009C6D12 /* MoodImageModel.swift in Sources */,
+				222F56AF2B0F2015009C6D12 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +388,11 @@
 			isa = PBXTargetDependency;
 			target = 222F56462B0F120C009C6D12 /* MoodyWidgetExtension */;
 			targetProxy = 222F56552B0F120D009C6D12 /* PBXContainerItemProxy */;
+		};
+		222F56B22B0F2015009C6D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 222F56A92B0F2015009C6D12 /* FixedMoodyWidget */;
+			targetProxy = 222F56B12B0F2015009C6D12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -438,6 +529,7 @@
 				DEVELOPMENT_TEAM = 27FY64RUCC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodyApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -469,6 +561,7 @@
 				DEVELOPMENT_TEAM = 27FY64RUCC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodyApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -543,6 +636,56 @@
 			};
 			name = Release;
 		};
+		222F56B52B0F2015009C6D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27FY64RUCC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FixedMoodyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FixedMoodyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sorawitt.MoodyApp.FixedMoodyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		222F56B62B0F2015009C6D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27FY64RUCC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FixedMoodyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FixedMoodyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sorawitt.MoodyApp.FixedMoodyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,6 +712,15 @@
 			buildConfigurations = (
 				222F56592B0F120D009C6D12 /* Debug */,
 				222F565A2B0F120D009C6D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		222F56B42B0F2015009C6D12 /* Build configuration list for PBXNativeTarget "FixedMoodyWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222F56B52B0F2015009C6D12 /* Debug */,
+				222F56B62B0F2015009C6D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -12,5 +12,6 @@ import SwiftUI
 struct MoodyWidgetBundle: WidgetBundle {
     var body: some Widget {
         TodayMoodWidget()
+        FixedMoodWidget()
     }
 }
