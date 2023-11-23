@@ -6,44 +6,7 @@
 //
 
 import SwiftUI
-
-struct ImageModel: Identifiable {
-    let id = UUID()
-    let imageName: String
-    let moodName: String
-    var isSelected: Bool = false
-    var isShaking: Bool = false
-}
-
-class ImageGridViewModel: ObservableObject {
-    @Published var images: [ImageModel] = [
-        ImageModel(imageName: "mood1", moodName: "Smile"),
-        ImageModel(imageName: "mood2", moodName: "Sleep"),
-        ImageModel(imageName: "mood3", moodName: "Sick"),
-        ImageModel(imageName: "mood4", moodName: "Wired"),
-        ImageModel(imageName: "mood5", moodName: "Content"),
-        ImageModel(imageName: "mood6", moodName: "Anxious"),
-        ImageModel(imageName: "mood7", moodName: "Joyful"),
-        ImageModel(imageName: "mood8", moodName: "Grateful"),
-        ImageModel(imageName: "mood9", moodName: "Frustrated"),
-        ImageModel(imageName: "mood10", moodName: "Hopeful"),
-        ImageModel(imageName: "mood11", moodName: "Bored"),
-        ImageModel(imageName: "mood12", moodName: "Loved"),
-        ImageModel(imageName: "mood13", moodName: "Confused"),
-        ImageModel(imageName: "mood14", moodName: "Proud"),
-        ImageModel(imageName: "mood15", moodName: "Optimistic"),
-        ImageModel(imageName: "mood16", moodName: "Peaceful")
-    ]
-    
-    func selectImage(at index: Int) {
-        images.indices.forEach { images[$0].isSelected = false }
-        images[index].isSelected = true
-    }
-    
-    func toggleShakingState(for index: Int) {
-        images[index].isShaking.toggle()
-    }
-}
+import WidgetKit
 
 struct ImageGridView: View {
     @ObservedObject var viewModel = ImageGridViewModel()
@@ -147,6 +110,9 @@ struct ImageGridView: View {
                 // MARK: Save data to User Default App Group.
                 let userDefaults = UserDefaults(suiteName: "group.com.sorawitt.moodyAppExtension")
                 userDefaults?.set(selectedImage.imageName, forKey: "selectedImageName")
+                
+                // MARK: Reload the widget timeline immediately.
+                WidgetCenter.shared.reloadTimelines(ofKind: "TodayMoodWidget")
                 
                 showSuccess = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

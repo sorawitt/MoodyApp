@@ -14,9 +14,12 @@
 		222F564A2B0F120C009C6D12 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222F56492B0F120C009C6D12 /* WidgetKit.framework */; };
 		222F564C2B0F120C009C6D12 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222F564B2B0F120C009C6D12 /* SwiftUI.framework */; };
 		222F564F2B0F120C009C6D12 /* MoodyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F564E2B0F120C009C6D12 /* MoodyWidgetBundle.swift */; };
-		222F56512B0F120C009C6D12 /* MoodyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56502B0F120C009C6D12 /* MoodyWidget.swift */; };
+		222F56512B0F120C009C6D12 /* TodayMoodWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56502B0F120C009C6D12 /* TodayMoodWidget.swift */; };
 		222F56532B0F120D009C6D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222F56522B0F120D009C6D12 /* Assets.xcassets */; };
 		222F56572B0F120D009C6D12 /* MoodyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 222F56472B0F120C009C6D12 /* MoodyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		222F56602B0F1394009C6D12 /* StaticValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F565F2B0F1394009C6D12 /* StaticValue.swift */; };
+		222F56622B0F13B1009C6D12 /* MoodImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56612B0F13B1009C6D12 /* MoodImageModel.swift */; };
+		222F56642B0F13F0009C6D12 /* MoodImageGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56632B0F13F0009C6D12 /* MoodImageGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +57,13 @@
 		222F56492B0F120C009C6D12 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		222F564B2B0F120C009C6D12 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		222F564E2B0F120C009C6D12 /* MoodyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyWidgetBundle.swift; sourceTree = "<group>"; };
-		222F56502B0F120C009C6D12 /* MoodyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyWidget.swift; sourceTree = "<group>"; };
+		222F56502B0F120C009C6D12 /* TodayMoodWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMoodWidget.swift; sourceTree = "<group>"; };
 		222F56522B0F120D009C6D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		222F56542B0F120D009C6D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222F565C2B0F1218009C6D12 /* MoodyWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodyWidgetExtension.entitlements; sourceTree = "<group>"; };
+		222F565F2B0F1394009C6D12 /* StaticValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticValue.swift; sourceTree = "<group>"; };
+		222F56612B0F13B1009C6D12 /* MoodImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodImageModel.swift; sourceTree = "<group>"; };
+		222F56632B0F13F0009C6D12 /* MoodImageGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodImageGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,8 @@
 				2218206A2B0F0F7C000996AD /* MoodyApp.entitlements */,
 				2218205C2B0EFFF9000996AD /* MoodyAppApp.swift */,
 				2218205E2B0EFFF9000996AD /* ContentView.swift */,
+				222F56612B0F13B1009C6D12 /* MoodImageModel.swift */,
+				222F56632B0F13F0009C6D12 /* MoodImageGridViewModel.swift */,
 				221820602B0EFFFB000996AD /* Assets.xcassets */,
 				221820622B0EFFFB000996AD /* Preview Content */,
 			);
@@ -133,11 +141,28 @@
 			isa = PBXGroup;
 			children = (
 				222F564E2B0F120C009C6D12 /* MoodyWidgetBundle.swift */,
-				222F56502B0F120C009C6D12 /* MoodyWidget.swift */,
+				222F565D2B0F1381009C6D12 /* TodayMood */,
 				222F56522B0F120D009C6D12 /* Assets.xcassets */,
 				222F56542B0F120D009C6D12 /* Info.plist */,
 			);
 			path = MoodyWidget;
+			sourceTree = "<group>";
+		};
+		222F565D2B0F1381009C6D12 /* TodayMood */ = {
+			isa = PBXGroup;
+			children = (
+				222F565E2B0F1388009C6D12 /* Entity */,
+				222F56502B0F120C009C6D12 /* TodayMoodWidget.swift */,
+			);
+			path = TodayMood;
+			sourceTree = "<group>";
+		};
+		222F565E2B0F1388009C6D12 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				222F565F2B0F1394009C6D12 /* StaticValue.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222F56602B0F1394009C6D12 /* StaticValue.swift in Sources */,
+				222F56622B0F13B1009C6D12 /* MoodImageModel.swift in Sources */,
+				222F56642B0F13F0009C6D12 /* MoodImageGridViewModel.swift in Sources */,
 				2218205F2B0EFFF9000996AD /* ContentView.swift in Sources */,
 				2218205D2B0EFFF9000996AD /* MoodyAppApp.swift in Sources */,
 			);
@@ -250,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222F56512B0F120C009C6D12 /* MoodyWidget.swift in Sources */,
+				222F56512B0F120C009C6D12 /* TodayMoodWidget.swift in Sources */,
 				222F564F2B0F120C009C6D12 /* MoodyWidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
