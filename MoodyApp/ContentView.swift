@@ -92,6 +92,11 @@ struct ImageGridView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 80, height: 80)
                         .rotationEffect(image.isSelected ? Angle(degrees: image.isShaking ? -5 : 5) : .zero)
+                        .animation(
+                            Animation
+                                .easeInOut(duration: 0.1)
+                                .repeatCount(3)
+                        )
                         .onTapGesture {
                             if let index = viewModel.images.firstIndex(where: { $0.id == image.id }) {
                                 viewModel.selectImage(at: index)
