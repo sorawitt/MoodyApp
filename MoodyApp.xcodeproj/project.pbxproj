@@ -20,6 +20,7 @@
 		222F56602B0F1394009C6D12 /* StaticValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F565F2B0F1394009C6D12 /* StaticValue.swift */; };
 		222F56622B0F13B1009C6D12 /* MoodImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56612B0F13B1009C6D12 /* MoodImageModel.swift */; };
 		222F56642B0F13F0009C6D12 /* MoodImageGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56632B0F13F0009C6D12 /* MoodImageGridViewModel.swift */; };
+		222F56672B0F1ACF009C6D12 /* FixedMoodWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F56662B0F1ACF009C6D12 /* FixedMoodWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		222F565F2B0F1394009C6D12 /* StaticValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticValue.swift; sourceTree = "<group>"; };
 		222F56612B0F13B1009C6D12 /* MoodImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodImageModel.swift; sourceTree = "<group>"; };
 		222F56632B0F13F0009C6D12 /* MoodImageGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodImageGridViewModel.swift; sourceTree = "<group>"; };
+		222F56662B0F1ACF009C6D12 /* FixedMoodWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedMoodWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				222F564E2B0F120C009C6D12 /* MoodyWidgetBundle.swift */,
 				222F565D2B0F1381009C6D12 /* TodayMood */,
+				222F56652B0F1A94009C6D12 /* FixedMood */,
 				222F56522B0F120D009C6D12 /* Assets.xcassets */,
 				222F56542B0F120D009C6D12 /* Info.plist */,
 			);
@@ -163,6 +166,14 @@
 				222F565F2B0F1394009C6D12 /* StaticValue.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		222F56652B0F1A94009C6D12 /* FixedMood */ = {
+			isa = PBXGroup;
+			children = (
+				222F56662B0F1ACF009C6D12 /* FixedMoodWidget.swift */,
+			);
+			path = FixedMood;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				222F56602B0F1394009C6D12 /* StaticValue.swift in Sources */,
+				222F56672B0F1ACF009C6D12 /* FixedMoodWidget.swift in Sources */,
 				222F56622B0F13B1009C6D12 /* MoodImageModel.swift in Sources */,
 				222F56642B0F13F0009C6D12 /* MoodImageGridViewModel.swift in Sources */,
 				2218205F2B0EFFF9000996AD /* ContentView.swift in Sources */,
